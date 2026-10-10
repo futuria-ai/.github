@@ -15,7 +15,7 @@
 Tick each box that applies. Each one links to its section of the [engineering guidance](https://futuria.atlassian.net/wiki/spaces/AAATM/pages/433913864).
 
 - [ ] **Architecturally significant** ([guidance](https://futuria.atlassian.net/wiki/spaces/AAATM/pages/433913864#5.-Cross-service-contract-changes)): new endpoint, cross-service contract, new dependency, or data model change. If ticked, tag the architecture reviewer.
-- [ ] **Lane C**: touches auth or authz, database migrations, `.github/`, or charts and infra. Needs a Lane C approver.
+- [ ] **High-risk area**: touches auth or authz, database migrations, `.github/`, or charts and infra. Needs a release approver.
 - [ ] **Env vars / flags** ([guidance](https://futuria.atlassian.net/wiki/spaces/AAATM/pages/433913864#1.-Environment-variables-and-feature-flags)): any new flag has an owner and a removal ticket. A bug fix is not behind a flag.
 - [ ] **Supportability** ([guidance](https://futuria.atlassian.net/wiki/spaces/AAATM/pages/433913864#2.-Supportability:-logging,-errors-and-resilience)): new logs carry the context IDs, nothing sensitive is logged, and a failure can be traced by one ID.
 - [ ] **Migration** ([guidance](https://futuria.atlassian.net/wiki/spaces/AAATM/pages/433913864#3.-Database-migrations)): has a working downgrade and runs safely while the old code is still live. A drop, rename or type change is done in two steps. It stays off the shared dev database unless you add the `dev-migration` label.
